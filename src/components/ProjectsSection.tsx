@@ -10,7 +10,6 @@ const projects = [
     technologies: ["Python", "Power BI", "SQL", "Data Analysis"],
     icon: BarChart3,
     color: "from-primary to-accent",
-    icon: BarChart3,
   },
   {
     title: "Cloud Cost Explorer",
