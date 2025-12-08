@@ -1,4 +1,6 @@
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Award, Files } from "lucide-react";
+import { title } from "process";
+import { fileURLToPath } from "url";
 
 const experiences = [
   {
@@ -26,9 +28,10 @@ const experiences = [
 ];
 
 const certifications = [
-  { title: "Power BI Certification", issuer: "Office Master" },
+  { title: "Power BI Certification", issuer: "Office Master"},
   { title: "Python Certification", issuer: "IBM" },
   { title: "Excel Certification", issuer: "Infosys Springboard" },
+  {title: "Data Analysis with Python", issuer: "IBM" },
 ];
 
 const ExperienceSection = () => {

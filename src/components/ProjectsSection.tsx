@@ -1,5 +1,6 @@
 import { ExternalLink, Github, BarChart3, Cloud } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BarChart } from "lucide-react";
 
 const projects = [
   {
@@ -9,6 +10,7 @@ const projects = [
     technologies: ["Python", "Power BI", "SQL", "Data Analysis"],
     icon: BarChart3,
     color: "from-primary to-accent",
+    icon: BarChart3,
   },
   {
     title: "Cloud Cost Explorer",
@@ -18,6 +20,9 @@ const projects = [
     icon: Cloud,
     color: "from-secondary to-primary",
   },
+  
+  
+  
 ];
 
 const ProjectsSection = () => {
