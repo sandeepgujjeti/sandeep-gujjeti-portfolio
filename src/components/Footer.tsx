@@ -23,23 +23,23 @@ const Footer = () => {
               href="https://www.linkedin.com/in/sandeep-gujjeti/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass-card rounded-full hover:scale-110 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
+              className="p-3 glass-card rounded-full hover:scale-110 hover:bg-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 group"
             >
-              <Linkedin className="w-5 h-5 text-primary" />
+              <Linkedin className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
             </a>
             <a
               href="https://github.com/sandeepgujjeti"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 glass-card rounded-full hover:scale-110 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
+              className="p-3 glass-card rounded-full hover:scale-110 hover:bg-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 group"
             >
-              <Github className="w-5 h-5 text-primary" />
+              <Github className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
             </a>
             <a
               href="mailto:sandeepgujjeti7@gmail.com"
-              className="p-3 glass-card rounded-full hover:scale-110 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300"
+              className="p-3 glass-card rounded-full hover:scale-110 hover:bg-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 group"
             >
-              <Mail className="w-5 h-5 text-primary" />
+              <Mail className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-colors duration-300" />
             </a>
           </div>
         </div>
