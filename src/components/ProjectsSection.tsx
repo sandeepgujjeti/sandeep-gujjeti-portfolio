@@ -1,6 +1,13 @@
-import { ExternalLink, Github, BarChart3, Cloud } from "lucide-react";
+import {
+  ExternalLink,
+  Github,
+  BarChart3,
+  Cloud,
+  FileText,
+  MessageCircle,
+  UtensilsCrossed,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BarChart } from "lucide-react";
 
 const projects = [
   {
@@ -10,6 +17,7 @@ const projects = [
     technologies: ["Python", "Power BI", "SQL", "Data Analysis"],
     icon: BarChart3,
     color: "from-primary to-accent",
+    repo: "https://github.com/sandeepgujjeti/itc-sales-dashboard",
   },
   {
     title: "Cloud Cost Explorer",
@@ -18,10 +26,34 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Recharts"],
     icon: Cloud,
     color: "from-secondary to-primary",
+    repo: "https://github.com/sandeep-gujjeti/cloud-cost-explorer",
   },
-  
-  
-  
+  {
+    title: "AI-Based Resume Analyzer",
+    description:
+      "An AI-based resume analysis application that extracts skills, evaluates resume content, and matches candidates with job requirements to streamline the recruitment process.",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
+    icon: FileText,
+    color: "from-accent to-primary",
+    repo: "https://github.com/charan-the-dev/resume-based-mock-interview-and-company-knoeledge-chatbot",
+  },
+  {
+    title: "NLP Chatbot Application",
+    description:
+      "A chatbot application built using NLP techniques and external APIs. It processes user queries and delivers meaningful responses through an interactive web interface.",
+    technologies: ["HTML", "CSS", "React.js", "NLP", "API Integration"],
+    icon: MessageCircle,
+    color: "from-primary to-secondary",
+    repo:"https://github.com/sandeepgujjeti/chatbot-using-nlp"
+  },
+  {
+    title: "Zomato Clone (MERN Stack)",
+    description:
+      "A full-stack food delivery web application built using the MERN stack. It features restaurant listings, user authentication, menu browsing, cart functionality, and order management with a responsive interface.",
+    technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    icon: UtensilsCrossed,
+    color: "from-secondary to-accent",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -36,7 +68,8 @@ const ProjectsSection = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Explore my recent projects showcasing data analysis and web development skills
+            Explore my recent projects showcasing data analysis, AI, and web
+            development skills
           </p>
         </div>
 
@@ -47,7 +80,9 @@ const ProjectsSection = () => {
               className="group glass-card rounded-3xl overflow-hidden hover:scale-[1.02] transition-all duration-500"
             >
               {/* Project Header */}
-              <div className={`h-48 bg-gradient-to-br ${project.color} p-8 flex items-center justify-center relative overflow-hidden`}>
+              <div
+                className={`h-48 bg-gradient-to-br ${project.color} p-8 flex items-center justify-center relative overflow-hidden`}
+              >
                 <div className="absolute inset-0 opacity-20">
                   <div className="absolute top-4 right-4 w-32 h-32 border border-foreground/20 rounded-full" />
                   <div className="absolute bottom-4 left-4 w-24 h-24 border border-foreground/20 rounded-xl rotate-12" />
@@ -60,6 +95,7 @@ const ProjectsSection = () => {
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-colors duration-300">
                   {project.title}
                 </h3>
+
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   {project.description}
                 </p>
