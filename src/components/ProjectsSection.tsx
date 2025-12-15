@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   ExternalLink,
   Github,
@@ -7,6 +8,9 @@ import {
   MessageCircle,
   UtensilsCrossed,
 } from "lucide-react";
+=======
+import { ExternalLink, Github, BarChart3, Cloud, FileText, UtensilsCrossed } from "lucide-react";
+>>>>>>> 01897096f219121c04bba37aa7761ccd2245de64
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -54,6 +58,25 @@ const projects = [
     icon: UtensilsCrossed,
     color: "from-secondary to-accent",
   },
+<<<<<<< HEAD
+=======
+  {
+    title: "AI Resume Builder & Mock Interview",
+    description:
+      "An AI-powered application that helps users create professional resumes and practice mock interviews. Uses advanced AI APIs to provide personalized feedback and suggestions.",
+    technologies: ["React.js", "Node.js", "AI API", "Tailwind CSS"],
+    icon: FileText,
+    color: "from-accent to-secondary",
+  },
+  {
+    title: "Zomato Clone",
+    description:
+      "A full-stack clone of the popular food delivery platform Zomato. Features restaurant listings, search functionality, user authentication, and a responsive design.",
+    technologies: ["MongoDB", "HTML", "CSS", "JavaScript", "React.js"],
+    icon: UtensilsCrossed,
+    color: "from-primary to-secondary",
+  },
+>>>>>>> 01897096f219121c04bba37aa7761ccd2245de64
 ];
 
 const ProjectsSection = () => {
