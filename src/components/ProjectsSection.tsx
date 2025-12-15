@@ -1,6 +1,5 @@
-import { ExternalLink, Github, BarChart3, Cloud } from "lucide-react";
+import { ExternalLink, Github, BarChart3, Cloud, FileText, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { BarChart } from "lucide-react";
 
 const projects = [
   {
@@ -19,9 +18,22 @@ const projects = [
     icon: Cloud,
     color: "from-secondary to-primary",
   },
-  
-  
-  
+  {
+    title: "AI Resume Builder & Mock Interview",
+    description:
+      "An AI-powered application that helps users create professional resumes and practice mock interviews. Uses advanced AI APIs to provide personalized feedback and suggestions.",
+    technologies: ["React.js", "Node.js", "AI API", "Tailwind CSS"],
+    icon: FileText,
+    color: "from-accent to-secondary",
+  },
+  {
+    title: "Zomato Clone",
+    description:
+      "A full-stack clone of the popular food delivery platform Zomato. Features restaurant listings, search functionality, user authentication, and a responsive design.",
+    technologies: ["MongoDB", "HTML", "CSS", "JavaScript", "React.js"],
+    icon: UtensilsCrossed,
+    color: "from-primary to-secondary",
+  },
 ];
 
 const ProjectsSection = () => {
