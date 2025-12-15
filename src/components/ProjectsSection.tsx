@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   ExternalLink,
   Github,
@@ -8,9 +7,6 @@ import {
   MessageCircle,
   UtensilsCrossed,
 } from "lucide-react";
-=======
-import { ExternalLink, Github, BarChart3, Cloud, FileText, UtensilsCrossed } from "lucide-react";
->>>>>>> 01897096f219121c04bba37aa7761ccd2245de64
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -26,7 +22,7 @@ const projects = [
   {
     title: "Cloud Cost Explorer",
     description:
-      "A dashboard that visualizes cloud usage and cost metrics. The system displays service-wise consumption using interactive graphs and charts, helping users understand and optimize their cloud spending.",
+      "A dashboard that visualizes cloud usage and cost metrics using interactive charts to help users monitor and optimize cloud spending.",
     technologies: ["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Recharts"],
     icon: Cloud,
     color: "from-secondary to-primary",
@@ -35,7 +31,7 @@ const projects = [
   {
     title: "AI-Based Resume Analyzer",
     description:
-      "An AI-based resume analysis application that extracts skills, evaluates resume content, and matches candidates with job requirements to streamline the recruitment process.",
+      "An AI-based resume analysis application that extracts skills, evaluates resume content, and matches candidates with job requirements.",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js"],
     icon: FileText,
     color: "from-accent to-primary",
@@ -44,39 +40,20 @@ const projects = [
   {
     title: "NLP Chatbot Application",
     description:
-      "A chatbot application built using NLP techniques and external APIs. It processes user queries and delivers meaningful responses through an interactive web interface.",
+      "A chatbot application built using NLP techniques and external APIs. It processes user queries and delivers meaningful responses.",
     technologies: ["HTML", "CSS", "React.js", "NLP", "API Integration"],
     icon: MessageCircle,
     color: "from-primary to-secondary",
-    repo:"https://github.com/sandeepgujjeti/chatbot-using-nlp"
+    repo: "https://github.com/sandeepgujjeti/chatbot-using-nlp",
   },
   {
     title: "Zomato Clone (MERN Stack)",
     description:
-      "A full-stack food delivery web application built using the MERN stack. It features restaurant listings, user authentication, menu browsing, cart functionality, and order management with a responsive interface.",
+      "A full-stack food delivery web application built using the MERN stack. It features restaurant listings, authentication, cart functionality, and order management.",
     technologies: ["MongoDB", "Express.js", "React.js", "Node.js"],
     icon: UtensilsCrossed,
     color: "from-secondary to-accent",
   },
-<<<<<<< HEAD
-=======
-  {
-    title: "AI Resume Builder & Mock Interview",
-    description:
-      "An AI-powered application that helps users create professional resumes and practice mock interviews. Uses advanced AI APIs to provide personalized feedback and suggestions.",
-    technologies: ["React.js", "Node.js", "AI API", "Tailwind CSS"],
-    icon: FileText,
-    color: "from-accent to-secondary",
-  },
-  {
-    title: "Zomato Clone",
-    description:
-      "A full-stack clone of the popular food delivery platform Zomato. Features restaurant listings, search functionality, user authentication, and a responsive design.",
-    technologies: ["MongoDB", "HTML", "CSS", "JavaScript", "React.js"],
-    icon: UtensilsCrossed,
-    color: "from-primary to-secondary",
-  },
->>>>>>> 01897096f219121c04bba37aa7761ccd2245de64
 ];
 
 const ProjectsSection = () => {
@@ -137,10 +114,17 @@ const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <Button variant="glass" size="sm" className="flex-1">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
+                  <Button variant="glass" size="sm" className="flex-1" asChild>
+                    <a
+                      href={project.repo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="w-4 h-4 mr-2" />
+                      Code
+                    </a>
                   </Button>
+
                   <Button variant="glow" size="sm" className="flex-1">
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Demo
