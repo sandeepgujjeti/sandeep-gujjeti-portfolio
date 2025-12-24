@@ -2,7 +2,7 @@ import { Code2, Database, LineChart, Users } from "lucide-react";
 
 const technicalSkills = [
   { name: "Python", level: 85 },
-  { name: "Power BI", level: 90 },
+  { name: "Power BI", level: 75 },
   { name: "HTML/CSS", level: 88 },
   { name: "JavaScript", level: 70 },
   { name: "React.js", level: 75 },
