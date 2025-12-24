@@ -1,4 +1,5 @@
-import { MapPin, GraduationCap, Code2, BarChart3, User } from "lucide-react";
+import { MapPin, GraduationCap, Code2, BarChart3 } from "lucide-react";
+import sandeepPhoto from "@/assets/sandeep-photo.jpg";
 
 const AboutSection = () => {
   const highlights = [
@@ -25,8 +26,12 @@ const AboutSection = () => {
             <div className="glass-card p-8 rounded-3xl relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10" />
               <div className="relative z-10">
-                <div className="w-full aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                  <User className="w-32 h-32 text-primary/50" />
+                <div className="w-full aspect-square max-w-md mx-auto rounded-2xl overflow-hidden">
+                  <img 
+                    src={sandeepPhoto} 
+                    alt="Sandeep Gujjeti" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
 
                 {/* Floating badges */}
