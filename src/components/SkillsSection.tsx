@@ -4,9 +4,7 @@ const technicalSkills = [
   { name: "Python", level: 85 },
   { name: "Power BI", level: 75 },
   { name: "HTML/CSS", level: 88 },
-  { name: "JavaScript", level: 70 },
-  { name: "React.js", level: 75 },
-  { name: "Node.js", level: 65 },
+  { name: "JavaScript", level: 60 },
   { name: "Excel", level: 85 },
   { name: "Data Analysis", level: 80 },
 ];
